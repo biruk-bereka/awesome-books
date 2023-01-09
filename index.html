@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <link rel="stylesheet" href="style.css">
     <title>Awesome Books</title>
     
 </head>
@@ -11,12 +12,19 @@
    <header>
     <h1>Awesome books</h1>
    </header> 
-   
-   <form action="">
-        <input type="text" id="title" class="title" placeholder="Title" name="title">
-        <input type="text" id="author" class="author" placeholder="Author" name="author">
+   <section class="books-section">
+    <div class="books">
+       <div class="book">
+          <p>Lorem ipsum</p>
+          <p>John Doe</p>
+          <button class="remove">Remove</button>
+       </div>
+    </div>
+    <form action="">
+        <input type="text" id="title" class="title" placeholder="Title" name="title"><br>
+        <input type="text" id="author" class="author" placeholder="Author" name="author"><br>
     <button type="submit" class="add">Add</button>
-   </form>
-       
+   </form>  
+   </section> 
 </body>
 </html>
