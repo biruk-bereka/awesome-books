@@ -29,14 +29,14 @@ books.forEach(book => displayBook(book));
 
 
 function capture() {
-    function book(title, author) {
-        this.title = title;
-        this.author = title;
+    let book = {
+        title : document.getElementById('title').value,
+        author : document.getElementById('author').value,
+        id : Date.now(),
     }
-    let titleCapture = document.getElementById("title").value;
-    let authorCapture = document.getElementById("author").value;
-    let newBook = new book(titleCapture, authorCapture);
-    console.log(newBook);
+    books.push(book);
+    displayBook(book);
 }
+
 
 
