@@ -20,7 +20,7 @@ const displayBook = () => {
   const books = getBooks();
   const booksContainer = document.querySelector(".books");
   booksContainer.innerHTML = "";
-  books.forEach((book,index) => {
+  books.forEach((book, index) => {
     const bookContainer = document.createElement("div");
     const title = document.createElement("p");
     title.innerText = book.title;
@@ -49,12 +49,22 @@ const addBook = () => {
   bookAuthor.value = "";
 }
 
-const deleteBook = (bookIndex) => {}
+const deleteBook = (bookIndex) => {
+  if (bookIndex !== null) {
+    const books = getBooks();
+    const bookUpdated = books.filter((book, index) => {
+      if (index !== bookIndex) return true;
+      return null;
+    });
+    setBooks(bookUpdated);
+    displayBook();
 
-const form = document.querySelector(".form");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  addBook();
-});
+  }
 
-displayBook();
+  const form = document.querySelector(".form");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    addBook();
+  });
+
+  displayBook();
