@@ -49,8 +49,7 @@ class Book {
     for (let i = 0; i < books.length; i += 1) {
       booksContainer.innerHTML += `
         <div class="book">
-        <p>${books[i].title}</p>
-        <p>${books[i].author}</p>
+        <p>"${books[i].title}" by ${books[i].author}</p>
         <button type="button" onClick= "deleteBook(${i})">Remove</button>
         `;
     }

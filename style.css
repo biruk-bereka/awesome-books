@@ -4,11 +4,27 @@
 }
 
 body {
+  text-align: center;
   margin: 20px 30px;
 }
 
+.books {
+  border: 1px solid black;
+}
+
 .book {
+  display: flex;
+  justify-content: space-between;
   margin: 10px 0;
+  padding: 0 10px;
+}
+
+.book:nth-child(2n+1){
+  background-color: gray;
+}
+
+.form {
+  margin: 20px 0;
 }
 
 input {
