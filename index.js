@@ -30,6 +30,18 @@ class Book {
     document.getElementById('author').value = '';
   }
 
+  deleteBook = (bookIndex) => {
+    if (bookIndex !== null) {
+      this.booksCollection = this.#getBooks();
+      const bookUpdated = this.booksCollection.filter((book, index) => {
+        if (index !== bookIndex) return true;
+        return null;
+      });
+      this.#setBooks(bookUpdated);
+      this.displayBook();
+    }
+  };
+
   displayBook = () => {
     const books = this.#getBooks();
     const booksContainer = document.querySelector('.books');
@@ -51,5 +63,11 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   book.addBook();
 });
+
+const deleteBook = (index) => {
+  book.deleteBook(index);
+};
+
+deleteBook(-1);
 
 book.displayBook();
