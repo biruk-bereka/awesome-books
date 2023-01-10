@@ -19,7 +19,7 @@ body {
   padding: 0 10px;
 }
 
-.book:nth-child(2n+1){
+.book:nth-child(2n+1) {
   background-color: gray;
 }
 

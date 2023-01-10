@@ -119,7 +119,7 @@ npm install
 
 > Future features
 
-- [ ] **Update the awesome books using classes**
+- [ ] **Update the awesome books by adding styling**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
