@@ -8,6 +8,21 @@ body {
   margin: 20px 30px;
 }
 
+li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
 .books {
   border: 1px solid black;
 }
