@@ -8,7 +8,7 @@ body {
   margin: 20px 30px;
 }
 
-li {
+.navLinks li {
   list-style: none;
 }
 
