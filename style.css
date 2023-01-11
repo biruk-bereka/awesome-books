@@ -4,8 +4,12 @@
 }
 
 body {
-  text-align: center;
   margin: 20px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .navLinks li {
@@ -23,6 +27,15 @@ nav ul {
   gap: 1rem;
 }
 
+.active {
+  color: green;
+}
+
+.books-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .books {
   border: 1px solid black;
 }
@@ -38,10 +51,35 @@ nav ul {
   background-color: gray;
 }
 
+.form-section {
+  text-align: center;
+}
+
 .form {
+  margin: 20px 0;
+}
+
+.form h3 {
   margin: 20px 0;
 }
 
 input {
   margin: 5px 0;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 1rem;
+}
+
+.invisible {
+  display: none;
+}
+
+footer {
+  border: 1px solid black;
 }
