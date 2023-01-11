@@ -50,6 +50,7 @@
   - User can remove the collection.
   - Collections are displayed at the top of the page.
   - Used local storage to store the collections.
+  - Add navigation to the page.
      
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
